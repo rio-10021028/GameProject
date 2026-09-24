@@ -139,11 +139,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="kazuate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="janken.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="janken.h" />
+    <ClInclude Include="kazuate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

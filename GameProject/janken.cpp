@@ -20,12 +20,12 @@ void initRand()
 	srand((unsigned int)time(nullptr));
 }
 
-RPS cpuHand()
+static RPS cpuHand()
 {
 	return (RPS)(rand() % 3);
 }
 
-Result resultChecker(RPS player, RPS cpu)
+static Result resultChecker(RPS player, RPS cpu)
 {
 	return (Result)((player - cpu + 2) % 3);
 }
