@@ -140,10 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RPS.cpp" />
+    <ClCompile Include="janken.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RPS.h" />
+    <ClInclude Include="janken.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
