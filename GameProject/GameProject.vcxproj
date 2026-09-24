@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameProject.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RPS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RPS.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
