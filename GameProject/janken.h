@@ -13,5 +13,4 @@ enum Result
 	DRAW    // あいこ 2
 };
 
-void initRand();
 void RPSSimurator();
