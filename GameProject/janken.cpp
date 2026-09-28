@@ -12,7 +12,7 @@ const char* showHands[] =
 
 const char* showResults[] =
 {
-	"負け ...",
+	"負け...",
 	"勝ち！！",
 };
 
