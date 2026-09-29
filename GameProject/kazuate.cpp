@@ -16,12 +16,12 @@ const char* resultMessage[] =
 	"不正解... それより小さい数字です！",
 };
 
-int numSetter()
+static int numSetter()
 {
-	return rand() % 10 + 1;
+	return numRand(10, 1);
 }
 
-Compare numCompare(const int a, const int b)
+static Compare numCompare(const int a, const int b)
 {
 	if (a == b)
 	{
@@ -38,7 +38,7 @@ Compare numCompare(const int a, const int b)
 }
 
 
-void kazuate()
+static void kazuate()
 {
 	int answer = numSetter();
 

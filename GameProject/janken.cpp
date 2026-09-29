@@ -3,6 +3,20 @@
 #include "janken.h"
 using namespace std;
 
+enum RPS
+{
+	ROCKS,
+	SCISSORS,
+	PAPERS
+};
+
+enum Result
+{
+	LOSE,	// 負け   0
+	WIN,    // 勝ち   1
+	DRAW    // あいこ 2
+};
+
 const char* showHands[] =
 {
 	"グー",
@@ -21,9 +35,14 @@ void initRand()
 	srand((unsigned int)time(nullptr));
 }
 
+int numRand(int rength, int plus = 0)
+{
+	return (rand() % rength) + plus;
+}
+
 static RPS cpuHand()
 {
-	return (RPS)(rand() % 3);
+	return (RPS)(numRand(3));
 }
 
 static Result resultChecker(RPS player, RPS cpu)
