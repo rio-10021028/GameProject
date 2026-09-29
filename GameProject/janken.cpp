@@ -45,7 +45,7 @@ static Result RPSGame()
 		// playerHand 入力
 		while (true)
 		{
-			int input = -1;
+			int input = 0;
 
 
 			cout << "グー > 0 " << endl
@@ -87,7 +87,6 @@ void RPSSimurator()
 
 	cout << "三本先取！じゃんけんゲーム！\n\n";
 
-	bool finishFlag = true;
 	int rounds = 1;
 	RPS playerHand = ROCKS;
 	RPS cpu = ROCKS;
@@ -97,7 +96,7 @@ void RPSSimurator()
 	};
 
 	// じゃんけん実行
-	while (finishFlag)
+	while (true)
 	{
 		Result thistimeResult = DRAW;
 
@@ -129,5 +128,6 @@ void RPSSimurator()
 		<< "勝ち > " << results[WIN] << endl
 		<< "負け > " << results[LOSE] << endl
 		<< "あなたの"
-		<< (results[WIN] == 3 ? showResults[WIN] : showResults[LOSE]);
+		<< (results[WIN] == 3 ? showResults[WIN] : showResults[LOSE])
+		<< endl << endl;
 }

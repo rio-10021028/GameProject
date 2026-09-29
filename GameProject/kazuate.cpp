@@ -42,16 +42,17 @@ void kazuate()
 {
 	int answer = numSetter();
 
-	for(int i = 0; i < 5; i++)
+	for(int i = 1; i <= 5; i++)
 	{
 		int num = 0;
 
-		cout << "1 から 10 の数字を入力してください > " << flush;
+		cout << "----- " << i << " 手目 -----" << endl
+			<< "1 から 10 の数字を入力してください > " << flush;
 		cin >> num;
 
 		Compare result = numCompare(answer, num);
 
-		cout << resultMessage[result] << endl;
+		cout << resultMessage[result] << endl << endl;
 
 		if (result == EQUAL)
 		{
@@ -59,7 +60,7 @@ void kazuate()
 		}
 	}
 
-	cout << "残念... 正解は " << answer << " でした。" << endl;
+	cout << "残念... 正解は " << answer << " でした。\n\n";
 }
 
 void kazuateSimurator()
@@ -67,7 +68,7 @@ void kazuateSimurator()
 	initRand();
 
 	cout << "===== 数当てゲーム！！ =====\n\n"
-		<< "5 手以内に当ててね" << endl;
+		<< "5 手以内に当ててね\n\n";
 
 	kazuate();
 }
